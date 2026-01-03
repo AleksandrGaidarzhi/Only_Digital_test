@@ -3,7 +3,7 @@ from utils.locators import FooterLocators as foot_loc
 from loguru import logger
 
 
-class HomePage(BasePage):
+class MainPage(BasePage):
     def __init__(self, driver, url):
         super().__init__(driver)
         self.url = url
@@ -13,15 +13,7 @@ class HomePage(BasePage):
         logger.info(f"Открытие страницы: {self.url}")
         self.driver.get(self.url)
 
-    def is_footer_present(self):
-        """Проверить наличие футера"""
-        return self.is_element_present(foot_loc.ROOT)
-
-    def is_footer_visible(self):
-        """Проверить видимость футера"""
-        return self.is_element_visible(foot_loc.ROOT)
-
-    def is_element_present(self, locator):
+    def element_is_present(self, locator):
         """Проверить наличие элемента"""
         try:
             self.find_element(locator)
