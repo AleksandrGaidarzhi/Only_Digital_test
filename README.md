@@ -67,7 +67,7 @@ project/
 
 ### 1. Клонирование репозитория
 ```bash
-git clone <repository-url>
+git clone https://github.com/AleksandrGaidarzhi/Only_Digital_test
 cd <project-directory>
 ```
 
@@ -108,8 +108,6 @@ pytest tests/footer_tests.py -v --log-level=DEBUG
 # Запуск с созданием HTML отчета
 pytest tests/footer_tests.py -v --html=report.html
 
-# Запуск только критических тестов
-pytest tests/footer_tests.py -v -m "not slow"
 ```
 
 ## 📊 Описание тестов
