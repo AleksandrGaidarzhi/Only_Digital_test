@@ -9,7 +9,7 @@ class MainPage(BasePage):
         self.url = url
 
     def open(self):
-        """Открыть главную страницу"""
+        """Открыть страницу"""
         logger.info(f"Открытие страницы: {self.url}")
         self.driver.get(self.url)
 

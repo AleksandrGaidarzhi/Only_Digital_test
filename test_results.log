@@ -1,0 +1,318 @@
+2026-01-04 10:49:16 | INFO     | tests.footer_tests:driver:12 - Запуск браузера...
+2026-01-04 10:49:22 | INFO     | pages.main_page:open:13 - Открытие страницы: https://only.digital
+2026-01-04 10:49:40 | INFO     | tests.footer_tests:page:29 - Страница загружена
+2026-01-04 10:49:40 | INFO     | tests.footer_tests:test_footer_presence:39 - Проверка наличия футера на странице
+2026-01-04 10:49:40 | SUCCESS  | tests.footer_tests:test_footer_presence:43 - Футер успешно найден и видим
+2026-01-04 10:49:40 | INFO     | tests.footer_tests:test_footer_sections_visibility:47 - Проверка видимости секций футера
+2026-01-04 10:49:40 | SUCCESS  | tests.footer_tests:test_footer_sections_visibility:64 - Все секции футера отображаются корректно
+2026-01-04 10:49:40 | INFO     | tests.footer_tests:test_start_project_button:68 - Проверка кнопки 'Начать проект'
+2026-01-04 10:49:40 | SUCCESS  | tests.footer_tests:test_start_project_button:86 - Кнопка 'Начать проект' работает корректно
+2026-01-04 10:49:40 | INFO     | tests.footer_tests:test_footer_logo_functionality:90 - Проверка логотипа в футере
+2026-01-04 10:49:40 | SUCCESS  | tests.footer_tests:test_footer_logo_functionality:98 - Логотип в футере отображается корректно
+2026-01-04 10:49:40 | INFO     | tests.footer_tests:test_social_links_presence:102 - Проверка ссылок на социальные сети
+2026-01-04 10:49:40 | SUCCESS  | tests.footer_tests:test_social_links_presence:123 - Ссылки на социальные сети работают корректно
+2026-01-04 10:49:40 | INFO     | tests.footer_tests:test_privacy_policy_link:127 - Проверка ссылки на политику конфиденциальности
+2026-01-04 10:49:41 | SUCCESS  | tests.footer_tests:test_privacy_policy_link:150 - Ссылка на политику конфиденциальности работает корректно
+2026-01-04 10:49:41 | INFO     | tests.footer_tests:test_footer_copyright_info:154 - Проверка информации об авторских правах
+2026-01-04 10:49:41 | SUCCESS  | tests.footer_tests:test_footer_copyright_info:171 - Информация об авторских правах отображается корректно
+2026-01-04 10:49:41 | INFO     | tests.footer_tests:test_footer_contact_info:175 - Проверка контактной информации
+2026-01-04 10:49:41 | SUCCESS  | tests.footer_tests:test_footer_contact_info:199 - Контактная информация отображается корректно
+2026-01-04 10:49:41 | INFO     | tests.footer_tests:test_footer_scroll_behavior:203 - Проверка поведения футера при скролле
+2026-01-04 10:49:43 | SUCCESS  | tests.footer_tests:test_footer_scroll_behavior:222 - Футер корректно ведет себя при скролле
+2026-01-04 10:49:43 | INFO     | tests.footer_tests:test_footer_responsiveness:226 - Проверка адаптивности футера
+2026-01-04 10:49:48 | SUCCESS  | tests.footer_tests:test_footer_responsiveness:253 - Футер адаптивен на всех разрешениях
+2026-01-04 10:49:48 | INFO     | tests.footer_tests:driver:17 - Закрытие браузера...
+2026-01-04 10:49:50 | INFO     | tests.footer_tests:driver:12 - Запуск браузера...
+2026-01-04 10:49:51 | INFO     | pages.main_page:open:13 - Открытие страницы: https://only.digital/projects
+2026-01-04 10:50:17 | INFO     | tests.footer_tests:page:29 - Страница загружена
+2026-01-04 10:50:17 | INFO     | tests.footer_tests:test_footer_presence:39 - Проверка наличия футера на странице
+2026-01-04 10:50:17 | SUCCESS  | tests.footer_tests:test_footer_presence:43 - Футер успешно найден и видим
+2026-01-04 10:50:17 | INFO     | tests.footer_tests:test_footer_sections_visibility:47 - Проверка видимости секций футера
+2026-01-04 10:50:18 | SUCCESS  | tests.footer_tests:test_footer_sections_visibility:64 - Все секции футера отображаются корректно
+2026-01-04 10:50:18 | INFO     | tests.footer_tests:test_start_project_button:68 - Проверка кнопки 'Начать проект'
+2026-01-04 10:50:18 | SUCCESS  | tests.footer_tests:test_start_project_button:86 - Кнопка 'Начать проект' работает корректно
+2026-01-04 10:50:18 | INFO     | tests.footer_tests:test_footer_logo_functionality:90 - Проверка логотипа в футере
+2026-01-04 10:50:18 | SUCCESS  | tests.footer_tests:test_footer_logo_functionality:98 - Логотип в футере отображается корректно
+2026-01-04 10:50:18 | INFO     | tests.footer_tests:test_social_links_presence:102 - Проверка ссылок на социальные сети
+2026-01-04 10:50:18 | SUCCESS  | tests.footer_tests:test_social_links_presence:123 - Ссылки на социальные сети работают корректно
+2026-01-04 10:50:18 | INFO     | tests.footer_tests:test_privacy_policy_link:127 - Проверка ссылки на политику конфиденциальности
+2026-01-04 10:50:18 | SUCCESS  | tests.footer_tests:test_privacy_policy_link:150 - Ссылка на политику конфиденциальности работает корректно
+2026-01-04 10:50:18 | INFO     | tests.footer_tests:test_footer_copyright_info:154 - Проверка информации об авторских правах
+2026-01-04 10:50:18 | SUCCESS  | tests.footer_tests:test_footer_copyright_info:171 - Информация об авторских правах отображается корректно
+2026-01-04 10:50:18 | INFO     | tests.footer_tests:test_footer_contact_info:175 - Проверка контактной информации
+2026-01-04 10:50:18 | SUCCESS  | tests.footer_tests:test_footer_contact_info:199 - Контактная информация отображается корректно
+2026-01-04 10:50:18 | INFO     | tests.footer_tests:test_footer_scroll_behavior:203 - Проверка поведения футера при скролле
+2026-01-04 10:50:20 | SUCCESS  | tests.footer_tests:test_footer_scroll_behavior:222 - Футер корректно ведет себя при скролле
+2026-01-04 10:50:20 | INFO     | tests.footer_tests:test_footer_responsiveness:226 - Проверка адаптивности футера
+2026-01-04 10:50:26 | SUCCESS  | tests.footer_tests:test_footer_responsiveness:253 - Футер адаптивен на всех разрешениях
+2026-01-04 10:50:26 | INFO     | tests.footer_tests:driver:17 - Закрытие браузера...
+2026-01-04 10:50:28 | INFO     | tests.footer_tests:driver:12 - Запуск браузера...
+2026-01-04 10:50:29 | INFO     | pages.main_page:open:13 - Открытие страницы: https://only.digital/company
+2026-01-04 10:50:36 | INFO     | tests.footer_tests:page:29 - Страница загружена
+2026-01-04 10:50:37 | INFO     | tests.footer_tests:test_footer_presence:39 - Проверка наличия футера на странице
+2026-01-04 10:50:37 | SUCCESS  | tests.footer_tests:test_footer_presence:43 - Футер успешно найден и видим
+2026-01-04 10:50:37 | INFO     | tests.footer_tests:test_footer_sections_visibility:47 - Проверка видимости секций футера
+2026-01-04 10:50:37 | SUCCESS  | tests.footer_tests:test_footer_sections_visibility:64 - Все секции футера отображаются корректно
+2026-01-04 10:50:37 | INFO     | tests.footer_tests:test_start_project_button:68 - Проверка кнопки 'Начать проект'
+2026-01-04 10:50:37 | INFO     | tests.footer_tests:test_footer_logo_functionality:90 - Проверка логотипа в футере
+2026-01-04 10:50:37 | INFO     | tests.footer_tests:test_social_links_presence:102 - Проверка ссылок на социальные сети
+2026-01-04 10:50:37 | SUCCESS  | tests.footer_tests:test_social_links_presence:123 - Ссылки на социальные сети работают корректно
+2026-01-04 10:50:37 | INFO     | tests.footer_tests:test_privacy_policy_link:127 - Проверка ссылки на политику конфиденциальности
+2026-01-04 10:50:37 | INFO     | tests.footer_tests:test_footer_copyright_info:154 - Проверка информации об авторских правах
+2026-01-04 10:50:37 | INFO     | tests.footer_tests:test_footer_contact_info:175 - Проверка контактной информации
+2026-01-04 10:50:37 | INFO     | tests.footer_tests:test_footer_scroll_behavior:203 - Проверка поведения футера при скролле
+2026-01-04 10:50:39 | SUCCESS  | tests.footer_tests:test_footer_scroll_behavior:222 - Футер корректно ведет себя при скролле
+2026-01-04 10:50:39 | INFO     | tests.footer_tests:test_footer_responsiveness:226 - Проверка адаптивности футера
+2026-01-04 10:50:45 | SUCCESS  | tests.footer_tests:test_footer_responsiveness:253 - Футер адаптивен на всех разрешениях
+2026-01-04 10:50:45 | INFO     | tests.footer_tests:driver:17 - Закрытие браузера...
+2026-01-04 10:50:47 | INFO     | tests.footer_tests:driver:12 - Запуск браузера...
+2026-01-04 10:50:48 | INFO     | pages.main_page:open:13 - Открытие страницы: https://only.digital/fields
+2026-01-04 10:51:19 | INFO     | tests.footer_tests:page:29 - Страница загружена
+2026-01-04 10:51:19 | INFO     | tests.footer_tests:test_footer_presence:39 - Проверка наличия футера на странице
+2026-01-04 10:51:19 | SUCCESS  | tests.footer_tests:test_footer_presence:43 - Футер успешно найден и видим
+2026-01-04 10:51:19 | INFO     | tests.footer_tests:test_footer_sections_visibility:47 - Проверка видимости секций футера
+2026-01-04 10:51:19 | SUCCESS  | tests.footer_tests:test_footer_sections_visibility:64 - Все секции футера отображаются корректно
+2026-01-04 10:51:19 | INFO     | tests.footer_tests:test_start_project_button:68 - Проверка кнопки 'Начать проект'
+2026-01-04 10:51:20 | SUCCESS  | tests.footer_tests:test_start_project_button:86 - Кнопка 'Начать проект' работает корректно
+2026-01-04 10:51:20 | INFO     | tests.footer_tests:test_footer_logo_functionality:90 - Проверка логотипа в футере
+2026-01-04 10:51:20 | SUCCESS  | tests.footer_tests:test_footer_logo_functionality:98 - Логотип в футере отображается корректно
+2026-01-04 10:51:20 | INFO     | tests.footer_tests:test_social_links_presence:102 - Проверка ссылок на социальные сети
+2026-01-04 10:51:20 | SUCCESS  | tests.footer_tests:test_social_links_presence:123 - Ссылки на социальные сети работают корректно
+2026-01-04 10:51:20 | INFO     | tests.footer_tests:test_privacy_policy_link:127 - Проверка ссылки на политику конфиденциальности
+2026-01-04 10:51:20 | SUCCESS  | tests.footer_tests:test_privacy_policy_link:150 - Ссылка на политику конфиденциальности работает корректно
+2026-01-04 10:51:20 | INFO     | tests.footer_tests:test_footer_copyright_info:154 - Проверка информации об авторских правах
+2026-01-04 10:51:20 | SUCCESS  | tests.footer_tests:test_footer_copyright_info:171 - Информация об авторских правах отображается корректно
+2026-01-04 10:51:20 | INFO     | tests.footer_tests:test_footer_contact_info:175 - Проверка контактной информации
+2026-01-04 10:51:20 | SUCCESS  | tests.footer_tests:test_footer_contact_info:199 - Контактная информация отображается корректно
+2026-01-04 10:51:20 | INFO     | tests.footer_tests:test_footer_scroll_behavior:203 - Проверка поведения футера при скролле
+2026-01-04 10:51:22 | SUCCESS  | tests.footer_tests:test_footer_scroll_behavior:222 - Футер корректно ведет себя при скролле
+2026-01-04 10:51:22 | INFO     | tests.footer_tests:test_footer_responsiveness:226 - Проверка адаптивности футера
+2026-01-04 10:51:27 | SUCCESS  | tests.footer_tests:test_footer_responsiveness:253 - Футер адаптивен на всех разрешениях
+2026-01-04 10:51:27 | INFO     | tests.footer_tests:driver:17 - Закрытие браузера...
+2026-01-04 10:51:29 | INFO     | tests.footer_tests:driver:12 - Запуск браузера...
+2026-01-04 10:51:31 | INFO     | pages.main_page:open:13 - Открытие страницы: https://only.digital/blog
+2026-01-04 10:51:36 | INFO     | tests.footer_tests:page:29 - Страница загружена
+2026-01-04 10:51:37 | INFO     | tests.footer_tests:test_footer_presence:39 - Проверка наличия футера на странице
+2026-01-04 10:51:37 | SUCCESS  | tests.footer_tests:test_footer_presence:43 - Футер успешно найден и видим
+2026-01-04 10:51:37 | INFO     | tests.footer_tests:test_footer_sections_visibility:47 - Проверка видимости секций футера
+2026-01-04 10:51:37 | INFO     | tests.footer_tests:test_start_project_button:68 - Проверка кнопки 'Начать проект'
+2026-01-04 10:51:37 | SUCCESS  | tests.footer_tests:test_start_project_button:86 - Кнопка 'Начать проект' работает корректно
+2026-01-04 10:51:37 | INFO     | tests.footer_tests:test_footer_logo_functionality:90 - Проверка логотипа в футере
+2026-01-04 10:51:37 | SUCCESS  | tests.footer_tests:test_footer_logo_functionality:98 - Логотип в футере отображается корректно
+2026-01-04 10:51:37 | INFO     | tests.footer_tests:test_social_links_presence:102 - Проверка ссылок на социальные сети
+2026-01-04 10:51:37 | SUCCESS  | tests.footer_tests:test_social_links_presence:123 - Ссылки на социальные сети работают корректно
+2026-01-04 10:51:37 | INFO     | tests.footer_tests:test_privacy_policy_link:127 - Проверка ссылки на политику конфиденциальности
+2026-01-04 10:51:37 | INFO     | tests.footer_tests:test_footer_copyright_info:154 - Проверка информации об авторских правах
+2026-01-04 10:51:37 | INFO     | tests.footer_tests:test_footer_contact_info:175 - Проверка контактной информации
+2026-01-04 10:51:37 | SUCCESS  | tests.footer_tests:test_footer_contact_info:199 - Контактная информация отображается корректно
+2026-01-04 10:51:37 | INFO     | tests.footer_tests:test_footer_scroll_behavior:203 - Проверка поведения футера при скролле
+2026-01-04 10:51:39 | SUCCESS  | tests.footer_tests:test_footer_scroll_behavior:222 - Футер корректно ведет себя при скролле
+2026-01-04 10:51:39 | INFO     | tests.footer_tests:test_footer_responsiveness:226 - Проверка адаптивности футера
+2026-01-04 10:51:44 | SUCCESS  | tests.footer_tests:test_footer_responsiveness:253 - Футер адаптивен на всех разрешениях
+2026-01-04 10:51:44 | INFO     | tests.footer_tests:driver:17 - Закрытие браузера...
+2026-01-04 10:51:46 | INFO     | tests.footer_tests:driver:12 - Запуск браузера...
+2026-01-04 10:51:48 | INFO     | pages.main_page:open:13 - Открытие страницы: https://only.digital/job
+2026-01-04 10:52:10 | INFO     | tests.footer_tests:page:29 - Страница загружена
+2026-01-04 10:52:10 | INFO     | tests.footer_tests:test_footer_presence:39 - Проверка наличия футера на странице
+2026-01-04 10:52:10 | SUCCESS  | tests.footer_tests:test_footer_presence:43 - Футер успешно найден и видим
+2026-01-04 10:52:10 | INFO     | tests.footer_tests:test_social_links_presence:102 - Проверка ссылок на социальные сети
+2026-01-04 10:52:10 | SUCCESS  | tests.footer_tests:test_social_links_presence:123 - Ссылки на социальные сети работают корректно
+2026-01-04 10:52:10 | INFO     | tests.footer_tests:test_privacy_policy_link:127 - Проверка ссылки на политику конфиденциальности
+2026-01-04 10:52:10 | SUCCESS  | tests.footer_tests:test_privacy_policy_link:150 - Ссылка на политику конфиденциальности работает корректно
+2026-01-04 10:52:10 | INFO     | tests.footer_tests:test_footer_copyright_info:154 - Проверка информации об авторских правах
+2026-01-04 10:52:10 | SUCCESS  | tests.footer_tests:test_footer_copyright_info:171 - Информация об авторских правах отображается корректно
+2026-01-04 10:52:10 | INFO     | tests.footer_tests:test_footer_scroll_behavior:203 - Проверка поведения футера при скролле
+2026-01-04 10:52:12 | SUCCESS  | tests.footer_tests:test_footer_scroll_behavior:222 - Футер корректно ведет себя при скролле
+2026-01-04 10:52:12 | INFO     | tests.footer_tests:test_footer_sections_visibility:272 - Проверка видимости секций футера
+2026-01-04 10:52:12 | SUCCESS  | tests.footer_tests:test_footer_sections_visibility:289 - Все секции футера отображаются корректно
+2026-01-04 10:52:12 | INFO     | tests.footer_tests:test_start_project_button:292 - Проверка пропущена: функционал не используется для Карьера и Контакты
+2026-01-04 10:52:12 | INFO     | tests.footer_tests:test_footer_logo_functionality:296 - Проверка пропущена: функционал не используется для Карьера и Контакты
+2026-01-04 10:52:12 | INFO     | tests.footer_tests:test_footer_contact_info:300 - Проверка пропущена: функционал не используется для Карьера и Контакты
+2026-01-04 10:52:12 | INFO     | tests.footer_tests:test_footer_responsiveness:305 - Проверка адаптивности футера
+2026-01-04 10:52:17 | SUCCESS  | tests.footer_tests:test_footer_responsiveness:332 - Футер адаптивен на всех разрешениях
+2026-01-04 10:52:17 | INFO     | tests.footer_tests:driver:17 - Закрытие браузера...
+2026-01-04 10:52:20 | INFO     | tests.footer_tests:driver:12 - Запуск браузера...
+2026-01-04 10:52:21 | INFO     | pages.main_page:open:13 - Открытие страницы: https://only.digital/contacts
+2026-01-04 10:52:25 | INFO     | tests.footer_tests:page:29 - Страница загружена
+2026-01-04 10:52:25 | INFO     | tests.footer_tests:test_footer_presence:39 - Проверка наличия футера на странице
+2026-01-04 10:52:25 | SUCCESS  | tests.footer_tests:test_footer_presence:43 - Футер успешно найден и видим
+2026-01-04 10:52:25 | INFO     | tests.footer_tests:test_social_links_presence:102 - Проверка ссылок на социальные сети
+2026-01-04 10:52:25 | SUCCESS  | tests.footer_tests:test_social_links_presence:123 - Ссылки на социальные сети работают корректно
+2026-01-04 10:52:25 | INFO     | tests.footer_tests:test_privacy_policy_link:127 - Проверка ссылки на политику конфиденциальности
+2026-01-04 10:52:25 | SUCCESS  | tests.footer_tests:test_privacy_policy_link:150 - Ссылка на политику конфиденциальности работает корректно
+2026-01-04 10:52:25 | INFO     | tests.footer_tests:test_footer_copyright_info:154 - Проверка информации об авторских правах
+2026-01-04 10:52:25 | SUCCESS  | tests.footer_tests:test_footer_copyright_info:171 - Информация об авторских правах отображается корректно
+2026-01-04 10:52:25 | INFO     | tests.footer_tests:test_footer_scroll_behavior:203 - Проверка поведения футера при скролле
+2026-01-04 10:52:28 | SUCCESS  | tests.footer_tests:test_footer_scroll_behavior:222 - Футер корректно ведет себя при скролле
+2026-01-04 10:52:28 | INFO     | tests.footer_tests:test_footer_sections_visibility:272 - Проверка видимости секций футера
+2026-01-04 10:52:28 | SUCCESS  | tests.footer_tests:test_footer_sections_visibility:289 - Все секции футера отображаются корректно
+2026-01-04 10:52:28 | INFO     | tests.footer_tests:test_start_project_button:292 - Проверка пропущена: функционал не используется для Карьера и Контакты
+2026-01-04 10:52:28 | INFO     | tests.footer_tests:test_footer_logo_functionality:296 - Проверка пропущена: функционал не используется для Карьера и Контакты
+2026-01-04 10:52:28 | INFO     | tests.footer_tests:test_footer_contact_info:300 - Проверка пропущена: функционал не используется для Карьера и Контакты
+2026-01-04 10:52:28 | INFO     | tests.footer_tests:test_footer_responsiveness:305 - Проверка адаптивности футера
+2026-01-04 10:52:33 | SUCCESS  | tests.footer_tests:test_footer_responsiveness:332 - Футер адаптивен на всех разрешениях
+2026-01-04 10:52:33 | INFO     | tests.footer_tests:driver:17 - Закрытие браузера...
+2026-01-04 10:52:35 | INFO     | conftest:setup_logging:30 - Все тесты завершены
+2026-01-04 10:54:09 | INFO     | tests.footer_tests:driver:12 - Запуск браузера...
+2026-01-04 10:54:10 | INFO     | pages.main_page:open:13 - Открытие страницы: https://only.digital
+2026-01-04 10:54:43 | INFO     | tests.footer_tests:page:29 - Страница загружена
+2026-01-04 10:54:43 | INFO     | tests.footer_tests:test_footer_presence:39 - Проверка наличия футера на странице
+2026-01-04 10:54:43 | SUCCESS  | tests.footer_tests:test_footer_presence:43 - Футер успешно найден и видим
+2026-01-04 10:54:43 | INFO     | tests.footer_tests:test_footer_sections_visibility:47 - Проверка видимости секций футера
+2026-01-04 10:54:43 | SUCCESS  | tests.footer_tests:test_footer_sections_visibility:64 - Все секции футера отображаются корректно
+2026-01-04 10:54:43 | INFO     | tests.footer_tests:test_start_project_button:68 - Проверка кнопки 'Начать проект'
+2026-01-04 10:54:43 | SUCCESS  | tests.footer_tests:test_start_project_button:86 - Кнопка 'Начать проект' работает корректно
+2026-01-04 10:54:43 | INFO     | tests.footer_tests:test_footer_logo_functionality:90 - Проверка логотипа в футере
+2026-01-04 10:54:44 | SUCCESS  | tests.footer_tests:test_footer_logo_functionality:98 - Логотип в футере отображается корректно
+2026-01-04 10:54:44 | INFO     | tests.footer_tests:test_social_links_presence:102 - Проверка ссылок на социальные сети
+2026-01-04 10:54:44 | SUCCESS  | tests.footer_tests:test_social_links_presence:123 - Ссылки на социальные сети работают корректно
+2026-01-04 10:54:44 | INFO     | tests.footer_tests:test_privacy_policy_link:127 - Проверка ссылки на политику конфиденциальности
+2026-01-04 10:54:44 | SUCCESS  | tests.footer_tests:test_privacy_policy_link:150 - Ссылка на политику конфиденциальности работает корректно
+2026-01-04 10:54:44 | INFO     | tests.footer_tests:test_footer_copyright_info:154 - Проверка информации об авторских правах
+2026-01-04 10:54:44 | SUCCESS  | tests.footer_tests:test_footer_copyright_info:171 - Информация об авторских правах отображается корректно
+2026-01-04 10:54:44 | INFO     | tests.footer_tests:test_footer_contact_info:175 - Проверка контактной информации
+2026-01-04 10:54:44 | SUCCESS  | tests.footer_tests:test_footer_contact_info:199 - Контактная информация отображается корректно
+2026-01-04 10:54:44 | INFO     | tests.footer_tests:test_footer_scroll_behavior:203 - Проверка поведения футера при скролле
+2026-01-04 10:54:46 | SUCCESS  | tests.footer_tests:test_footer_scroll_behavior:222 - Футер корректно ведет себя при скролле
+2026-01-04 10:54:46 | INFO     | tests.footer_tests:test_footer_responsiveness:226 - Проверка адаптивности футера
+2026-01-04 10:54:51 | SUCCESS  | tests.footer_tests:test_footer_responsiveness:253 - Футер адаптивен на всех разрешениях
+2026-01-04 10:54:51 | INFO     | tests.footer_tests:driver:17 - Закрытие браузера...
+2026-01-04 10:54:53 | INFO     | tests.footer_tests:driver:12 - Запуск браузера...
+2026-01-04 10:54:54 | INFO     | pages.main_page:open:13 - Открытие страницы: https://only.digital/projects
+2026-01-04 10:55:21 | INFO     | tests.footer_tests:page:29 - Страница загружена
+2026-01-04 10:55:21 | INFO     | tests.footer_tests:test_footer_presence:39 - Проверка наличия футера на странице
+2026-01-04 10:55:21 | SUCCESS  | tests.footer_tests:test_footer_presence:43 - Футер успешно найден и видим
+2026-01-04 10:55:21 | INFO     | tests.footer_tests:test_footer_sections_visibility:47 - Проверка видимости секций футера
+2026-01-04 10:55:21 | SUCCESS  | tests.footer_tests:test_footer_sections_visibility:64 - Все секции футера отображаются корректно
+2026-01-04 10:55:21 | INFO     | tests.footer_tests:test_start_project_button:68 - Проверка кнопки 'Начать проект'
+2026-01-04 10:55:21 | SUCCESS  | tests.footer_tests:test_start_project_button:86 - Кнопка 'Начать проект' работает корректно
+2026-01-04 10:55:21 | INFO     | tests.footer_tests:test_footer_logo_functionality:90 - Проверка логотипа в футере
+2026-01-04 10:55:21 | SUCCESS  | tests.footer_tests:test_footer_logo_functionality:98 - Логотип в футере отображается корректно
+2026-01-04 10:55:21 | INFO     | tests.footer_tests:test_social_links_presence:102 - Проверка ссылок на социальные сети
+2026-01-04 10:55:22 | SUCCESS  | tests.footer_tests:test_social_links_presence:123 - Ссылки на социальные сети работают корректно
+2026-01-04 10:55:22 | INFO     | tests.footer_tests:test_privacy_policy_link:127 - Проверка ссылки на политику конфиденциальности
+2026-01-04 10:55:22 | SUCCESS  | tests.footer_tests:test_privacy_policy_link:150 - Ссылка на политику конфиденциальности работает корректно
+2026-01-04 10:55:22 | INFO     | tests.footer_tests:test_footer_copyright_info:154 - Проверка информации об авторских правах
+2026-01-04 10:55:22 | SUCCESS  | tests.footer_tests:test_footer_copyright_info:171 - Информация об авторских правах отображается корректно
+2026-01-04 10:55:22 | INFO     | tests.footer_tests:test_footer_contact_info:175 - Проверка контактной информации
+2026-01-04 10:55:22 | SUCCESS  | tests.footer_tests:test_footer_contact_info:199 - Контактная информация отображается корректно
+2026-01-04 10:55:22 | INFO     | tests.footer_tests:test_footer_scroll_behavior:203 - Проверка поведения футера при скролле
+2026-01-04 10:55:24 | SUCCESS  | tests.footer_tests:test_footer_scroll_behavior:222 - Футер корректно ведет себя при скролле
+2026-01-04 10:55:24 | INFO     | tests.footer_tests:test_footer_responsiveness:226 - Проверка адаптивности футера
+2026-01-04 10:55:30 | SUCCESS  | tests.footer_tests:test_footer_responsiveness:253 - Футер адаптивен на всех разрешениях
+2026-01-04 10:55:30 | INFO     | tests.footer_tests:driver:17 - Закрытие браузера...
+2026-01-04 10:55:32 | INFO     | tests.footer_tests:driver:12 - Запуск браузера...
+2026-01-04 10:55:33 | INFO     | pages.main_page:open:13 - Открытие страницы: https://only.digital/company
+2026-01-04 10:55:51 | INFO     | tests.footer_tests:page:29 - Страница загружена
+2026-01-04 10:55:51 | INFO     | tests.footer_tests:test_footer_presence:39 - Проверка наличия футера на странице
+2026-01-04 10:55:51 | SUCCESS  | tests.footer_tests:test_footer_presence:43 - Футер успешно найден и видим
+2026-01-04 10:55:51 | INFO     | tests.footer_tests:test_footer_sections_visibility:47 - Проверка видимости секций футера
+2026-01-04 10:55:52 | SUCCESS  | tests.footer_tests:test_footer_sections_visibility:64 - Все секции футера отображаются корректно
+2026-01-04 10:55:52 | INFO     | tests.footer_tests:test_start_project_button:68 - Проверка кнопки 'Начать проект'
+2026-01-04 10:55:52 | SUCCESS  | tests.footer_tests:test_start_project_button:86 - Кнопка 'Начать проект' работает корректно
+2026-01-04 10:55:52 | INFO     | tests.footer_tests:test_footer_logo_functionality:90 - Проверка логотипа в футере
+2026-01-04 10:55:52 | SUCCESS  | tests.footer_tests:test_footer_logo_functionality:98 - Логотип в футере отображается корректно
+2026-01-04 10:55:52 | INFO     | tests.footer_tests:test_social_links_presence:102 - Проверка ссылок на социальные сети
+2026-01-04 10:55:52 | SUCCESS  | tests.footer_tests:test_social_links_presence:123 - Ссылки на социальные сети работают корректно
+2026-01-04 10:55:52 | INFO     | tests.footer_tests:test_privacy_policy_link:127 - Проверка ссылки на политику конфиденциальности
+2026-01-04 10:55:52 | SUCCESS  | tests.footer_tests:test_privacy_policy_link:150 - Ссылка на политику конфиденциальности работает корректно
+2026-01-04 10:55:52 | INFO     | tests.footer_tests:test_footer_copyright_info:154 - Проверка информации об авторских правах
+2026-01-04 10:55:52 | SUCCESS  | tests.footer_tests:test_footer_copyright_info:171 - Информация об авторских правах отображается корректно
+2026-01-04 10:55:52 | INFO     | tests.footer_tests:test_footer_contact_info:175 - Проверка контактной информации
+2026-01-04 10:55:52 | SUCCESS  | tests.footer_tests:test_footer_contact_info:199 - Контактная информация отображается корректно
+2026-01-04 10:55:52 | INFO     | tests.footer_tests:test_footer_scroll_behavior:203 - Проверка поведения футера при скролле
+2026-01-04 10:55:54 | SUCCESS  | tests.footer_tests:test_footer_scroll_behavior:222 - Футер корректно ведет себя при скролле
+2026-01-04 10:55:54 | INFO     | tests.footer_tests:test_footer_responsiveness:226 - Проверка адаптивности футера
+2026-01-04 10:55:59 | SUCCESS  | tests.footer_tests:test_footer_responsiveness:253 - Футер адаптивен на всех разрешениях
+2026-01-04 10:55:59 | INFO     | tests.footer_tests:driver:17 - Закрытие браузера...
+2026-01-04 10:56:02 | INFO     | tests.footer_tests:driver:12 - Запуск браузера...
+2026-01-04 10:56:03 | INFO     | pages.main_page:open:13 - Открытие страницы: https://only.digital/fields
+2026-01-04 10:56:23 | INFO     | tests.footer_tests:page:29 - Страница загружена
+2026-01-04 10:56:23 | INFO     | tests.footer_tests:test_footer_presence:39 - Проверка наличия футера на странице
+2026-01-04 10:56:23 | SUCCESS  | tests.footer_tests:test_footer_presence:43 - Футер успешно найден и видим
+2026-01-04 10:56:23 | INFO     | tests.footer_tests:test_footer_sections_visibility:47 - Проверка видимости секций футера
+2026-01-04 10:56:23 | SUCCESS  | tests.footer_tests:test_footer_sections_visibility:64 - Все секции футера отображаются корректно
+2026-01-04 10:56:23 | INFO     | tests.footer_tests:test_start_project_button:68 - Проверка кнопки 'Начать проект'
+2026-01-04 10:56:23 | SUCCESS  | tests.footer_tests:test_start_project_button:86 - Кнопка 'Начать проект' работает корректно
+2026-01-04 10:56:23 | INFO     | tests.footer_tests:test_footer_logo_functionality:90 - Проверка логотипа в футере
+2026-01-04 10:56:23 | SUCCESS  | tests.footer_tests:test_footer_logo_functionality:98 - Логотип в футере отображается корректно
+2026-01-04 10:56:23 | INFO     | tests.footer_tests:test_social_links_presence:102 - Проверка ссылок на социальные сети
+2026-01-04 10:56:23 | SUCCESS  | tests.footer_tests:test_social_links_presence:123 - Ссылки на социальные сети работают корректно
+2026-01-04 10:56:23 | INFO     | tests.footer_tests:test_privacy_policy_link:127 - Проверка ссылки на политику конфиденциальности
+2026-01-04 10:56:23 | SUCCESS  | tests.footer_tests:test_privacy_policy_link:150 - Ссылка на политику конфиденциальности работает корректно
+2026-01-04 10:56:23 | INFO     | tests.footer_tests:test_footer_copyright_info:154 - Проверка информации об авторских правах
+2026-01-04 10:56:23 | SUCCESS  | tests.footer_tests:test_footer_copyright_info:171 - Информация об авторских правах отображается корректно
+2026-01-04 10:56:23 | INFO     | tests.footer_tests:test_footer_contact_info:175 - Проверка контактной информации
+2026-01-04 10:56:23 | SUCCESS  | tests.footer_tests:test_footer_contact_info:199 - Контактная информация отображается корректно
+2026-01-04 10:56:23 | INFO     | tests.footer_tests:test_footer_scroll_behavior:203 - Проверка поведения футера при скролле
+2026-01-04 10:56:25 | SUCCESS  | tests.footer_tests:test_footer_scroll_behavior:222 - Футер корректно ведет себя при скролле
+2026-01-04 10:56:25 | INFO     | tests.footer_tests:test_footer_responsiveness:226 - Проверка адаптивности футера
+2026-01-04 10:56:31 | SUCCESS  | tests.footer_tests:test_footer_responsiveness:253 - Футер адаптивен на всех разрешениях
+2026-01-04 10:56:31 | INFO     | tests.footer_tests:driver:17 - Закрытие браузера...
+2026-01-04 10:56:33 | INFO     | tests.footer_tests:driver:12 - Запуск браузера...
+2026-01-04 10:56:34 | INFO     | pages.main_page:open:13 - Открытие страницы: https://only.digital/blog
+2026-01-04 10:56:37 | INFO     | tests.footer_tests:page:29 - Страница загружена
+2026-01-04 10:56:37 | INFO     | tests.footer_tests:test_footer_presence:39 - Проверка наличия футера на странице
+2026-01-04 10:56:37 | SUCCESS  | tests.footer_tests:test_footer_presence:43 - Футер успешно найден и видим
+2026-01-04 10:56:37 | INFO     | tests.footer_tests:test_footer_sections_visibility:47 - Проверка видимости секций футера
+2026-01-04 10:56:37 | SUCCESS  | tests.footer_tests:test_footer_sections_visibility:64 - Все секции футера отображаются корректно
+2026-01-04 10:56:37 | INFO     | tests.footer_tests:test_start_project_button:68 - Проверка кнопки 'Начать проект'
+2026-01-04 10:56:37 | SUCCESS  | tests.footer_tests:test_start_project_button:86 - Кнопка 'Начать проект' работает корректно
+2026-01-04 10:56:37 | INFO     | tests.footer_tests:test_footer_logo_functionality:90 - Проверка логотипа в футере
+2026-01-04 10:56:37 | SUCCESS  | tests.footer_tests:test_footer_logo_functionality:98 - Логотип в футере отображается корректно
+2026-01-04 10:56:37 | INFO     | tests.footer_tests:test_social_links_presence:102 - Проверка ссылок на социальные сети
+2026-01-04 10:56:37 | SUCCESS  | tests.footer_tests:test_social_links_presence:123 - Ссылки на социальные сети работают корректно
+2026-01-04 10:56:37 | INFO     | tests.footer_tests:test_privacy_policy_link:127 - Проверка ссылки на политику конфиденциальности
+2026-01-04 10:56:37 | SUCCESS  | tests.footer_tests:test_privacy_policy_link:150 - Ссылка на политику конфиденциальности работает корректно
+2026-01-04 10:56:37 | INFO     | tests.footer_tests:test_footer_copyright_info:154 - Проверка информации об авторских правах
+2026-01-04 10:56:37 | SUCCESS  | tests.footer_tests:test_footer_copyright_info:171 - Информация об авторских правах отображается корректно
+2026-01-04 10:56:37 | INFO     | tests.footer_tests:test_footer_contact_info:175 - Проверка контактной информации
+2026-01-04 10:56:37 | SUCCESS  | tests.footer_tests:test_footer_contact_info:199 - Контактная информация отображается корректно
+2026-01-04 10:56:37 | INFO     | tests.footer_tests:test_footer_scroll_behavior:203 - Проверка поведения футера при скролле
+2026-01-04 10:56:40 | SUCCESS  | tests.footer_tests:test_footer_scroll_behavior:222 - Футер корректно ведет себя при скролле
+2026-01-04 10:56:40 | INFO     | tests.footer_tests:test_footer_responsiveness:226 - Проверка адаптивности футера
+2026-01-04 10:56:45 | SUCCESS  | tests.footer_tests:test_footer_responsiveness:253 - Футер адаптивен на всех разрешениях
+2026-01-04 10:56:45 | INFO     | tests.footer_tests:driver:17 - Закрытие браузера...
+2026-01-04 10:56:47 | INFO     | tests.footer_tests:driver:12 - Запуск браузера...
+2026-01-04 10:56:48 | INFO     | pages.main_page:open:13 - Открытие страницы: https://only.digital/job
+2026-01-04 10:57:06 | INFO     | tests.footer_tests:page:29 - Страница загружена
+2026-01-04 10:57:06 | INFO     | tests.footer_tests:test_footer_presence:39 - Проверка наличия футера на странице
+2026-01-04 10:57:06 | SUCCESS  | tests.footer_tests:test_footer_presence:43 - Футер успешно найден и видим
+2026-01-04 10:57:06 | INFO     | tests.footer_tests:test_social_links_presence:102 - Проверка ссылок на социальные сети
+2026-01-04 10:57:06 | SUCCESS  | tests.footer_tests:test_social_links_presence:123 - Ссылки на социальные сети работают корректно
+2026-01-04 10:57:06 | INFO     | tests.footer_tests:test_privacy_policy_link:127 - Проверка ссылки на политику конфиденциальности
+2026-01-04 10:57:06 | SUCCESS  | tests.footer_tests:test_privacy_policy_link:150 - Ссылка на политику конфиденциальности работает корректно
+2026-01-04 10:57:06 | INFO     | tests.footer_tests:test_footer_copyright_info:154 - Проверка информации об авторских правах
+2026-01-04 10:57:07 | SUCCESS  | tests.footer_tests:test_footer_copyright_info:171 - Информация об авторских правах отображается корректно
+2026-01-04 10:57:07 | INFO     | tests.footer_tests:test_footer_scroll_behavior:203 - Проверка поведения футера при скролле
+2026-01-04 10:57:09 | SUCCESS  | tests.footer_tests:test_footer_scroll_behavior:222 - Футер корректно ведет себя при скролле
+2026-01-04 10:57:09 | INFO     | tests.footer_tests:test_footer_sections_visibility:272 - Проверка видимости секций футера
+2026-01-04 10:57:09 | SUCCESS  | tests.footer_tests:test_footer_sections_visibility:289 - Все секции футера отображаются корректно
+2026-01-04 10:57:09 | INFO     | tests.footer_tests:test_start_project_button:292 - Проверка пропущена: функционал не используется для Карьера и Контакты
+2026-01-04 10:57:09 | INFO     | tests.footer_tests:test_footer_logo_functionality:296 - Проверка пропущена: функционал не используется для Карьера и Контакты
+2026-01-04 10:57:09 | INFO     | tests.footer_tests:test_footer_contact_info:300 - Проверка пропущена: функционал не используется для Карьера и Контакты
+2026-01-04 10:57:09 | INFO     | tests.footer_tests:test_footer_responsiveness:305 - Проверка адаптивности футера
+2026-01-04 10:57:14 | SUCCESS  | tests.footer_tests:test_footer_responsiveness:332 - Футер адаптивен на всех разрешениях
+2026-01-04 10:57:14 | INFO     | tests.footer_tests:driver:17 - Закрытие браузера...
+2026-01-04 10:57:16 | INFO     | tests.footer_tests:driver:12 - Запуск браузера...
+2026-01-04 10:57:17 | INFO     | pages.main_page:open:13 - Открытие страницы: https://only.digital/contacts
+2026-01-04 10:57:29 | INFO     | tests.footer_tests:page:29 - Страница загружена
+2026-01-04 10:57:29 | INFO     | tests.footer_tests:test_footer_presence:39 - Проверка наличия футера на странице
+2026-01-04 10:57:29 | SUCCESS  | tests.footer_tests:test_footer_presence:43 - Футер успешно найден и видим
+2026-01-04 10:57:29 | INFO     | tests.footer_tests:test_social_links_presence:102 - Проверка ссылок на социальные сети
+2026-01-04 10:57:29 | SUCCESS  | tests.footer_tests:test_social_links_presence:123 - Ссылки на социальные сети работают корректно
+2026-01-04 10:57:29 | INFO     | tests.footer_tests:test_privacy_policy_link:127 - Проверка ссылки на политику конфиденциальности
+2026-01-04 10:57:30 | SUCCESS  | tests.footer_tests:test_privacy_policy_link:150 - Ссылка на политику конфиденциальности работает корректно
+2026-01-04 10:57:30 | INFO     | tests.footer_tests:test_footer_copyright_info:154 - Проверка информации об авторских правах
+2026-01-04 10:57:30 | SUCCESS  | tests.footer_tests:test_footer_copyright_info:171 - Информация об авторских правах отображается корректно
+2026-01-04 10:57:30 | INFO     | tests.footer_tests:test_footer_scroll_behavior:203 - Проверка поведения футера при скролле
+2026-01-04 10:57:32 | SUCCESS  | tests.footer_tests:test_footer_scroll_behavior:222 - Футер корректно ведет себя при скролле
+2026-01-04 10:57:32 | INFO     | tests.footer_tests:test_footer_sections_visibility:272 - Проверка видимости секций футера
+2026-01-04 10:57:32 | SUCCESS  | tests.footer_tests:test_footer_sections_visibility:289 - Все секции футера отображаются корректно
+2026-01-04 10:57:32 | INFO     | tests.footer_tests:test_start_project_button:292 - Проверка пропущена: функционал не используется для Карьера и Контакты
+2026-01-04 10:57:32 | INFO     | tests.footer_tests:test_footer_logo_functionality:296 - Проверка пропущена: функционал не используется для Карьера и Контакты
+2026-01-04 10:57:32 | INFO     | tests.footer_tests:test_footer_contact_info:300 - Проверка пропущена: функционал не используется для Карьера и Контакты
+2026-01-04 10:57:32 | INFO     | tests.footer_tests:test_footer_responsiveness:305 - Проверка адаптивности футера
+2026-01-04 10:57:37 | SUCCESS  | tests.footer_tests:test_footer_responsiveness:332 - Футер адаптивен на всех разрешениях
+2026-01-04 10:57:37 | INFO     | tests.footer_tests:driver:17 - Закрытие браузера...
+2026-01-04 10:57:39 | INFO     | conftest:setup_logging:30 - Все тесты завершены

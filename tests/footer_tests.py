@@ -9,7 +9,6 @@ import time
 
 @pytest.fixture(scope='class')
 def driver():
-    """Фикстура для браузера на весь класс тестов"""
     logger.info("Запуск браузера...")
     driver = webdriver.Chrome()
     driver.implicitly_wait(5)
@@ -24,7 +23,7 @@ class BaseTest:
     @pytest.fixture(scope='class')
     def page(self, driver):
         if self.URL is None:
-            raise ValueError("URL must be defined in child class")
+            raise ValueError("URL должен быть определен в дочернем классе")
         page = MainPage(driver, self.URL)
         page.open()
         logger.info("Страница загружена")

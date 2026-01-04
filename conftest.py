@@ -22,7 +22,7 @@ def setup_logging():
         "test_results.log",
         format="{time:YYYY-MM-DD HH:mm:ss} | {level: <8} | {name}:{function}:{line} - {message}",
         level="INFO",
-        rotation="500 MB",
+        rotation="50 MB",
         retention="10 days"
     )
 

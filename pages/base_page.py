@@ -21,8 +21,8 @@ class BasePage:
     def get_url(self):
         return self.driver.current_url
 
-    def click_on_element(self, *locator):
-        self.find_element(*locator).click()
+    def click_on_element(self, locator):
+        self.find_element(locator).click()
 
     def element_is_visible(self, locator, timeout=None):
         """Проверить видимость элемента"""
