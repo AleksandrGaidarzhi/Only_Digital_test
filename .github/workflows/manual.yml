@@ -41,10 +41,12 @@ jobs:
     # Шаг 4: Установка зависимостей
     - name: Install dependencies
       run: |
+        source /home/runner/work/Only_Digital_test/Only_Digital_test/.venv/bin/activate
         python -m pip install --upgrade pip
         pip install -r requirements.txt        
 
     # Шаг 5: Запуск тестов с pytest
     - name: Run tests
-      run:  pytest /home/runner/work/Only_Digital_test/Only_Digital_test/tests/footer_test.py -v
+      run:  |
+        pytest /home/runner/work/Only_Digital_test/Only_Digital_test/tests/footer_test.py -v
 
