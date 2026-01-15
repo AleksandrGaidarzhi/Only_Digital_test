@@ -85,28 +85,28 @@ pip install -r requirements.txt
 
 ### Базовый запуск всех тестов:
 ```bash
-pytest tests/footer_tests.py -v
+pytest tests/footer_test.py -v
 ```
 
 ### Запуск тестов для конкретной страницы:
 ```bash
 # Тесты только для главной страницы
-pytest tests/footer_tests.py::TestMainFooter -v
+pytest tests/footer_test.py::TestMainFooter -v
 
 # Тесты для страницы проектов
-pytest tests/footer_tests.py::TestProjectsFooter -v
+pytest tests/footer_test.py::TestProjectsFooter -v
 
 # Тесты для страницы карьеры
-pytest tests/footer_tests.py::TestCareerFooter -v
+pytest tests/footer_test.py::TestCareerFooter -v
 ```
 
 ### Запуск с дополнительными опциями:
 ```bash
 # Запуск с детальным логированием
-pytest tests/footer_tests.py -v --log-level=DEBUG
+pytest tests/footer_test.py -v --log-level=DEBUG
 
 # Запуск с созданием HTML отчета
-pytest tests/footer_tests.py -v --html=report.html
+pytest tests/footer_test.py -v --html=report.html
 
 ```
 
@@ -192,7 +192,7 @@ class TestMainFooter:
 ## 📝 Пример выполнения теста
 
 ```bash
-$ pytest tests/footer_tests.py::TestMainFooter::test_footer_presence -v
+$ pytest tests/footer_test.py::TestMainFooter::test_footer_presence -v
 ================================================================
 15:30:45 | INFO     | Запуск браузера...
 15:30:46 | INFO     | Открытие страницы: https://only.digital

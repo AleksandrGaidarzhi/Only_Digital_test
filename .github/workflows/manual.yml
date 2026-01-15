@@ -46,5 +46,5 @@ jobs:
     
     # Шаг 5: Запуск тестов с pytest
     - name: Run tests
-      run:  pytest tests/footer_tests.py -v
+      run:  pytest tests/footer_test.py -v
 
