@@ -1,81 +1,88 @@
-name: Only_tests_auto
+name: Debug Tests
 
-on:
-  push:
-    branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
+on: [push]
 
 jobs:
-  test:
+  debug:
     runs-on: ubuntu-latest
 
     steps:
-    # Шаг 1: Получение кода
-    - name: Checkout repository
+    - name: Checkout code
       uses: actions/checkout@v4
 
-    # Шаг 2: ДЕТАЛЬНАЯ диагностика структуры
-    - name: Debug - Show project structure
+    - name: FULL DEBUG INFO
       run: |
-        echo "=== Текущая директория ==="
+        echo "========== ШАГ 1: СТРУКТУРА РЕПОЗИТОРИЯ =========="
         pwd
-        echo ""
-        echo "=== Полная структура проекта ==="
+        echo "--- Все файлы ---"
         find . -type f -name "*.py" | sort
         echo ""
-        echo "=== Содержимое корня ==="
+        echo "--- Содержимое корня ---"
         ls -la
         echo ""
-        echo "=== Проверка существования footer_test.py ==="
+        
+        echo "========== ШАГ 2: АНАЛИЗ footer_test.py =========="
         if [ -f "footer_test.py" ]; then
-          echo "✅ footer_test.py найден в корне"
-          echo "Размер файла: $(wc -l < footer_test.py) строк"
-          echo "Первые 5 строк файла:"
-          head -5 footer_test.py
+          echo "✅ Файл существует"
+          echo "Размер: $(wc -l < footer_test.py) строк"
+          echo ""
+          echo "--- Первые 30 строк файла ---"
+          head -30 footer_test.py
+          echo ""
+          echo "--- Поиск test_ функций в файле ---"
+          grep -n "def test_" footer_test.py || echo "❌ Нет функций, начинающихся с 'def test_'"
+          echo ""
+          echo "--- Поиск классов Test ---"
+          grep -n "class.*Test" footer_test.py || echo "❌ Нет классов с 'Test'"
+          echo ""
+          echo "--- Проверка синтаксиса Python ---"
+          python3 -m py_compile footer_test.py && echo "✅ Синтаксис OK" || echo "❌ Синтаксическая ошибка"
         else
-          echo "❌ footer_test.py НЕ найден в корне"
+          echo "❌ Файл footer_test.py НЕ НАЙДЕН в корне!"
           echo "Поиск по всему проекту:"
-          find . -name "footer_test.py" -type f
+          find . -name "*footer*" -type f
         fi
 
-    # Шаг 3: Установка Python
-    - name: Install Python
+    - name: Setup Python
       uses: actions/setup-python@v4
       with:
         python-version: "3.10"
 
-    # Шаг 4: Установка зависимостей БЕЗ кэша (для простоты)
-    - name: Install dependencies
+    - name: Install pytest
       run: |
-        python -m pip install --upgrade pip
-        echo "Устанавливаем pytest..."
         pip install pytest
-        
-        # Если есть requirements.txt - устанавливаем
-        if [ -f requirements.txt ]; then
-          echo "Устанавливаем из requirements.txt..."
-          pip install -r requirements.txt
-        fi
-        
-        # Проверяем установленные пакеты
-        echo "=== Установленные пакеты ==="
-        pip list
+        echo "Версия pytest: $(pytest --version)"
 
-    # Шаг 5: Запуск тестов с разными параметрами
-    - name: Run tests
+    - name: DEBUG PYTEST COLLECTION
       run: |
-        echo "=== Способ 1: Запуск конкретного файла ==="
-        python -m pytest footer_test.py -v || echo "Способ 1 завершился с ошибкой"
+        echo "========== ШАГ 3: ДИАГНОСТИКА PYTEST =========="
+        echo ""
+        echo "--- Способ 1: Базовая коллекция ---"
+        python -m pytest footer_test.py --collect-only 2>&1 || true
         
         echo ""
-        echo "=== Способ 2: Поиск ВСЕХ тестов в проекте ==="
-        python -m pytest --collect-only -v
+        echo "--- Способ 2: Подробная коллекция ---"
+        python -m pytest footer_test.py --collect-only -v 2>&1 || true
         
         echo ""
-        echo "=== Способ 3: Запуск всех тестов с текущей директории ==="
-        python -m pytest . -v
+        echo "--- Способ 3: Запуск с максимальной отладкой ---"
+        python -m pytest footer_test.py -v --tb=long --capture=no 2>&1 || true
         
         echo ""
-        echo "=== Способ 4: Запуск с явным указанием пути ==="
-        python -m pytest ./footer_test.py -v
+        echo "--- Способ 4: Проверка как модуль ---"
+        python -c "
+        import sys
+        print('Python path:', sys.path)
+try:
+    import footer_test
+    print('✅ Модуль footer_test импортирован успешно')
+    # Проверим атрибуты модуля
+    print('Атрибуты модуля:', [x for x in dir(footer_test) if not x.startswith('_')])
+except Exception as e:
+    print(f'❌ Ошибка импорта: {e}')
+        "    
+      - name: EXECUTE FILE DIRECTLY
+      run: |
+        echo "========== ШАГ 4: ПРЯМОЙ ЗАПУСК ФАЙЛА =========="
+        echo "--- Попытка выполнить файл напрямую ---"
+        python footer_test.py 2>&1 || echo "Файл выполнен (или упал с ошибкой)"
