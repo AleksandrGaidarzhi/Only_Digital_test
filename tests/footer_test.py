@@ -1,3 +1,11 @@
+# В footer_test.py
+import sys
+import os
+
+# Добавьте путь к проекту
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
