@@ -1,1 +1,72 @@
 
+name: Only_tests_auto
+
+on:
+  # Триггеры: запуск при push в main ветку и при pull request
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+# Разрешение permissions для работы с репозиторием
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # Используем последний Ubuntu
+    
+    strategy:
+      matrix:
+        # Тестируем на нескольких версиях Python для надежности
+        python-version: ["3.9", "3.10", "3.11"]
+    
+    steps:
+    # Шаг 1: Получение кода из репозитория
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    # Шаг 2: Установка Python
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    # Шаг 3: Кэширование pip для ускорения сборок
+    - name: Cache pip packages
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    
+    # Шаг 4: Установка зависимостей
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        # Если у вас есть requirements.txt
+        if [ -f requirements.txt ]; then
+          pip install -r requirements.txt
+        else
+          # Устанавливаем зависимости напрямую
+          pip install pytest requests
+        fi
+    
+    # Шаг 5: Запуск тестов с pytest
+    - name: Test with pytest
+      run: |
+        pytest -v --tb=short
+        
+    # Опционально: Шаг для генерации отчета о покрытии
+    # - name: Generate coverage report
+    #   run: |
+    #     pip install pytest-cov
+    #     pytest --cov=./ --cov-report=xml
+    
+    # Опционально: Загрузка отчета о покрытии как артефакта
+    # - name: Upload coverage report
+    #   uses: actions/upload-artifact@v3
+    #   with:
+    #     name: coverage-report
+    #     path: coverage.xml
