@@ -35,6 +35,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt        
 
+    - name: Check file structure
+      run: |
+        ls -la
+        find . -name "*.py" -type f
+        find . -name "*test*.py" -type f
+
     # Шаг 5: Запуск тестов с pytest
     - name: Run tests
       run:  |
