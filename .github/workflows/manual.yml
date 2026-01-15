@@ -1,50 +1,81 @@
 name: Only_tests_auto
 
 on:
-  # Триггеры: запуск при push в main ветку и при pull request
   push:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
 
-# Разрешение permissions для работы с репозиторием
-permissions:
-  contents: read
-
 jobs:
   test:
-    runs-on: ubuntu-latest  # Используем последний Ubuntu
-    
+    runs-on: ubuntu-latest
+
     steps:
-    # Шаг 1: Получение кода из репозитория
+    # Шаг 1: Получение кода
     - name: Checkout repository
       uses: actions/checkout@v4
-    
-    # Шаг 2: Установка Python
+
+    # Шаг 2: ДЕТАЛЬНАЯ диагностика структуры
+    - name: Debug - Show project structure
+      run: |
+        echo "=== Текущая директория ==="
+        pwd
+        echo ""
+        echo "=== Полная структура проекта ==="
+        find . -type f -name "*.py" | sort
+        echo ""
+        echo "=== Содержимое корня ==="
+        ls -la
+        echo ""
+        echo "=== Проверка существования footer_test.py ==="
+        if [ -f "footer_test.py" ]; then
+          echo "✅ footer_test.py найден в корне"
+          echo "Размер файла: $(wc -l < footer_test.py) строк"
+          echo "Первые 5 строк файла:"
+          head -5 footer_test.py
+        else
+          echo "❌ footer_test.py НЕ найден в корне"
+          echo "Поиск по всему проекту:"
+          find . -name "footer_test.py" -type f
+        fi
+
+    # Шаг 3: Установка Python
     - name: Install Python
       uses: actions/setup-python@v4
       with:
         python-version: "3.10"
 
-    - name: Install Chrome
-      run: sudo apt install google-chrome-stable
-    
-    # Шаг 3: Кэширование pip для ускорения сборок
-    - name: Cache pip packages
-      uses: actions/cache@v3
-      with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-        restore-keys: |
-          ${{ runner.os }}-pip-
-    
-    # Шаг 4: Установка зависимостей
+    # Шаг 4: Установка зависимостей БЕЗ кэша (для простоты)
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt        
-    
-    # Шаг 5: Запуск тестов с pytest
-    - name: Run tests
-      run:  pytest ./tests/footer_test.py -v
+        echo "Устанавливаем pytest..."
+        pip install pytest
+        
+        # Если есть requirements.txt - устанавливаем
+        if [ -f requirements.txt ]; then
+          echo "Устанавливаем из requirements.txt..."
+          pip install -r requirements.txt
+        fi
+        
+        # Проверяем установленные пакеты
+        echo "=== Установленные пакеты ==="
+        pip list
 
+    # Шаг 5: Запуск тестов с разными параметрами
+    - name: Run tests
+      run: |
+        echo "=== Способ 1: Запуск конкретного файла ==="
+        python -m pytest footer_test.py -v || echo "Способ 1 завершился с ошибкой"
+        
+        echo ""
+        echo "=== Способ 2: Поиск ВСЕХ тестов в проекте ==="
+        python -m pytest --collect-only -v
+        
+        echo ""
+        echo "=== Способ 3: Запуск всех тестов с текущей директории ==="
+        python -m pytest . -v
+        
+        echo ""
+        echo "=== Способ 4: Запуск с явным указанием пути ==="
+        python -m pytest ./footer_test.py -v
