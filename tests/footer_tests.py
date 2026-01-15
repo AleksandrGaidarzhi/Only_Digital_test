@@ -1,6 +1,7 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
 from utils.locators import FooterLocators, AltFooterLocators
 from pages.main_page import MainPage
 from loguru import logger
@@ -10,7 +11,9 @@ import time
 @pytest.fixture(scope='class')
 def driver():
     logger.info("Запуск браузера...")
-    driver = webdriver.Chrome()
+    options = Options()
+    options.add_argument('--headless')
+    driver = webdriver.Chrome(options=options)
     driver.implicitly_wait(5)
     driver.set_window_size(1300, 1280)
     yield driver
